@@ -1,23 +1,41 @@
 // Mixins
 
-
-
-.button(@bg-color, @font-color) {
+.button-mixin(@bg-color, @font-color) {
     background: @bg-color;
     color: @font-color;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 5px 20px;
     display: inline-block;
+    padding: 15px;
+    font-size: 1.4rem;
     transition: 0.2s;
 
-    @media @phone {
-        width: 80%;
-    }
-
     &:hover {
-        background: @font-color;
-        color: @bg-color;
         cursor: pointer;
+        color: @bg-color;
+        background: @font-color;
     }
 }
+
+.section-mixin {
+    max-width: 1000px;
+    margin: auto;
+}
+
+// .button(@bg-color, @font-color) {
+//     background: @bg-color;
+//     color: @font-color;
+//     border: 1px solid black;
+//     border-radius: 10px;
+//     padding: 5px 20px;
+//     display: inline;
+//     transition: 0.2s;
+
+//     @media @phone {
+//         width: 80%;
+//     }
+
+//     &:hover {
+//         background: @font-color;
+//         color: @bg-color;
+//         cursor: pointer;
+//     }
+// }

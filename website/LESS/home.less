@@ -1,8 +1,34 @@
 // Home Page Styles
 
-// .section-hero {
+* {
+    font-family: @body-font;
+}
 
-// }
+.section-hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 2%;
+
+    div {
+        .section-mixin();
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        color: #fff;
+        margin: 16px 0;
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    }
+
+    @media @phone {
+        text-align: center;
+    }
+}
 
 
 // CUSTOM BUTTON USING MIXINS EXAMPLE. SEE MIXINS.LESS FOR THE BUTTON MIXIN STYLES
