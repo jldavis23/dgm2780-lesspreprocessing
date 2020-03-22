@@ -4,16 +4,22 @@
     font-family: @body-font;
 }
 
+section>h1 {
+    .title-mixin();
+}
+
 // HERO IMAGE
 .section-hero {
     background-image: url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 150px 2%;
+    padding: 150px 4%;
 
     div {
         .section-mixin();
+        padding: 0;
+        border: none;
     }
 
     h1 {
@@ -24,6 +30,7 @@
 
     .button {
         .button-mixin(@main-color, #fff);
+        border: none;
     }
 
     @media @phone {
@@ -34,10 +41,54 @@
 // STAFF PICKS
 .section-staff-picks {
     .section-mixin();
+    text-align:center;
 
-    h1 {
-        .title-mixin();
+    .button {
+        .button-mixin(@main-color, #fff);
+        margin: 20px 0;
+    } 
+}
+
+// PRODUCT FEATURES
+.section-product-features {
+    .section-mixin();
+
+    img {
+        width: 100%;
     }
+
+    .features-figure {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+
+        @media @phone {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .features-description {
+        text-align: center;
+
+        figure {
+            padding: 50px;
+        }
+        figcaption {
+            font-size: 1.6rem;
+            margin: 10px;
+            color: @accent-color;
+            font-weight: 600;
+        }
+        span {
+            display: block;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    }
+    
 }
 
 

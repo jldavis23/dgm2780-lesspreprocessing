@@ -3,6 +3,7 @@
 .button-mixin(@bg-color, @font-color) {
     background: @bg-color;
     color: @font-color;
+    border: 1px solid @bg-color;
     display: inline-block;
     padding: 15px;
     font-size: 1.4rem;
@@ -18,6 +19,10 @@
 .section-mixin {
     max-width: 1080px;
     margin: auto;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 70px;
+    border-bottom: 1px solid @accent-color;
 }
 
 .title-mixin {

@@ -1,6 +1,10 @@
 .section-mixin {
   max-width: 1080px;
   margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
 }
 .title-mixin {
   text-align: center;
@@ -147,7 +151,6 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 40px 30px;
-  margin: 2%;
 }
 .gallery figure:hover span {
   transform: translateY(10px);
@@ -170,6 +173,7 @@ html {
   margin: 10px;
   color: grey;
   font-weight: 600;
+  text-transform: uppercase;
 }
 .gallery figcaption span {
   display: block;
@@ -217,16 +221,27 @@ nav a:hover {
 * {
   font-family: 'Raleway', sans-serif;
 }
+section > h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 70px 0;
+}
 .section-hero {
   background-image: url('../images/hero.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 150px 2%;
+  padding: 150px 4%;
 }
 .section-hero div {
   max-width: 1080px;
   margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
+  padding: 0;
+  border: none;
 }
 .section-hero h1 {
   font-size: 3.5rem;
@@ -236,10 +251,12 @@ nav a:hover {
 .section-hero .button {
   background: orange;
   color: #fff;
+  border: 1px solid orange;
   display: inline-block;
   padding: 15px;
   font-size: 1.4rem;
   transition: all 0.35s ease-in-out;
+  border: none;
 }
 .section-hero .button:hover {
   cursor: pointer;
@@ -254,10 +271,76 @@ nav a:hover {
 .section-staff-picks {
   max-width: 1080px;
   margin: auto;
-}
-.section-staff-picks h1 {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
   text-align: center;
-  font-size: 3rem;
-  margin: 70px 0;
+}
+.section-staff-picks .button {
+  background: orange;
+  color: #fff;
+  border: 1px solid orange;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+  margin: 20px 0;
+}
+.section-staff-picks .button:hover {
+  cursor: pointer;
+  color: orange;
+  background: #fff;
+}
+.section-product-features {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
+}
+.section-product-features img {
+  width: 100%;
+}
+.section-product-features .features-figure {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+@media (max-width: 500px) {
+  .section-product-features .features-figure {
+    grid-template-columns: 1fr;
+  }
+}
+.section-product-features .features-description {
+  text-align: center;
+}
+.section-product-features .features-description figure {
+  padding: 50px;
+}
+.section-product-features .features-description figcaption {
+  font-size: 1.6rem;
+  margin: 10px;
+  color: grey;
+  font-weight: 600;
+}
+.section-product-features .features-description span {
+  display: block;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.section-product-features .button {
+  background: orange;
+  color: #fff;
+  border: 1px solid orange;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+}
+.section-product-features .button:hover {
+  cursor: pointer;
+  color: orange;
+  background: #fff;
 }
 /*# sourceMappingURL=index.css.map */
