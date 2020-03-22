@@ -1,6 +1,11 @@
 .section-mixin {
-  max-width: 1000px;
+  max-width: 1080px;
   margin: auto;
+}
+.title-mixin {
+  text-align: center;
+  font-size: 3rem;
+  margin: 70px 0;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -138,41 +143,47 @@ html {
 *:after {
   box-sizing: inherit;
 }
-* {
-  font-family: 'Raleway', sans-serif;
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px 30px;
+  margin: 2%;
 }
-.section-hero {
-  background-image: url('../images/hero.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 150px 2%;
+.gallery figure:hover span {
+  transform: translateY(10px);
+  transition: all 0.35s ease-in-out;
+  opacity: 1;
 }
-.section-hero div {
-  max-width: 1000px;
-  margin: auto;
+.gallery figure:hover img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.section-hero h1 {
-  font-size: 3.5rem;
-  color: #fff;
-  margin: 16px 0;
+.gallery img {
+  width: 100%;
+  transition: all 0.35s ease-in-out;
 }
-.section-hero .button {
-  background: orange;
-  color: #fff;
-  display: inline-block;
-  padding: 15px;
-  font-size: 1.4rem;
-  transition: 0.2s;
-}
-.section-hero .button:hover {
+.gallery img:hover {
   cursor: pointer;
-  color: orange;
-  background: #fff;
+}
+.gallery figcaption {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 10px;
+  color: grey;
+  font-weight: 600;
+}
+.gallery figcaption span {
+  display: block;
+  opacity: 0;
+  font-weight: 400;
+}
+@media (max-width: 750px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 500px) {
-  .section-hero {
-    text-align: center;
+  .gallery {
+    grid-template-columns: 1fr 1fr;
   }
 }
 header h1 {
@@ -198,8 +209,55 @@ nav a {
   padding: 15px 0;
   margin: 0 15px;
   border-bottom: 3px solid rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
 }
 nav a:hover {
   border-bottom: 3px solid #000;
+}
+* {
+  font-family: 'Raleway', sans-serif;
+}
+.section-hero {
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 2%;
+}
+.section-hero div {
+  max-width: 1080px;
+  margin: auto;
+}
+.section-hero h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  margin: 16px 0;
+}
+.section-hero .button {
+  background: orange;
+  color: #fff;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+}
+.section-hero .button:hover {
+  cursor: pointer;
+  color: orange;
+  background: #fff;
+}
+@media (max-width: 500px) {
+  .section-hero {
+    text-align: center;
+  }
+}
+.section-staff-picks {
+  max-width: 1080px;
+  margin: auto;
+}
+.section-staff-picks h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 70px 0;
 }
 /*# sourceMappingURL=index.css.map */

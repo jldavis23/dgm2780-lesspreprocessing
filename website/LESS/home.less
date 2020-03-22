@@ -4,6 +4,7 @@
     font-family: @body-font;
 }
 
+// HERO IMAGE
 .section-hero {
     background-image: url('../images/hero.jpg');
     background-size: cover;
@@ -27,6 +28,15 @@
 
     @media @phone {
         text-align: center;
+    }
+}
+
+// STAFF PICKS
+.section-staff-picks {
+    .section-mixin();
+
+    h1 {
+        .title-mixin();
     }
 }
 
