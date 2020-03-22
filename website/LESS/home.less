@@ -115,19 +115,97 @@ section>h1 {
             border: none;
         }
     }
+
+    @media @tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @media @phone {
+        grid-template-columns: 1fr;
+    }
 }
 
+// CURRENT FAVORITE SECTION
+.section-current-favorite {
+    .section-mixin();
 
-// CUSTOM BUTTON USING MIXINS EXAMPLE. SEE MIXINS.LESS FOR THE BUTTON MIXIN STYLES
-//-------------------------------
-// .custom-button {
-//     .button(pink, white);
-//     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-//     font-size: 3rem;
-// }
+    img {
+        width: 100%;
+    }
 
-// .custom-button-2 {
-//     .button(green, white);
-//     font-family: Arial, Helvetica, sans-serif;
-//     font-size: 1rem;
-// }
+    .favorite-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 50px;
+    }
+
+    .favorite-description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: @accent-color;
+        }
+
+        span {
+            display: block;
+            margin-top: 10px;
+            font-weight: 400;
+        }
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    }
+}
+
+// FOLLOW SECTION
+.section-follow {
+    .section-mixin();
+    text-align: center;
+    border: none;
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 70px;
+    }
+
+    .button {
+        .button-mixin(@main-color, #fff);
+    }
+}
+
+// MAKE IT YOUR OWN SECTION
+.section-your-own {
+    background-image: url('../images/yourown.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+
+    .picture-cover {
+        padding: 200px;
+        display: flex;
+        justify-content: center;
+
+        div {
+            background-color: rgba(255, 255, 255, 0.747);
+            width: 50%;
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+            margin-top: 20px;
+        }
+    }
+}

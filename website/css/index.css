@@ -381,4 +381,113 @@ section > h1 {
   color: orange;
   background: #fff;
 }
+@media (max-width: 750px) {
+  .section-services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .section-services {
+    grid-template-columns: 1fr;
+  }
+}
+.section-current-favorite {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
+}
+.section-current-favorite img {
+  width: 100%;
+}
+.section-current-favorite .favorite-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.section-current-favorite .favorite-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.section-current-favorite .favorite-description h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: grey;
+}
+.section-current-favorite .favorite-description span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.section-current-favorite .button {
+  background: orange;
+  color: #fff;
+  border: 1px solid orange;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+}
+.section-current-favorite .button:hover {
+  cursor: pointer;
+  color: orange;
+  background: #fff;
+}
+.section-follow {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  border: none;
+}
+.section-follow h2 {
+  font-size: 1.6rem;
+  margin-bottom: 70px;
+}
+.section-follow .button {
+  background: orange;
+  color: #fff;
+  border: 1px solid orange;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+}
+.section-follow .button:hover {
+  cursor: pointer;
+  color: orange;
+  background: #fff;
+}
+.section-your-own {
+  background-image: url('../images/yourown.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+.section-your-own .picture-cover {
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+}
+.section-your-own .picture-cover div {
+  background-color: rgba(255, 255, 255, 0.747);
+  width: 50%;
+  padding: 20px;
+}
+.section-your-own .picture-cover h2 {
+  font-size: 2rem;
+}
+.section-your-own .picture-cover p {
+  font-size: 1.6rem;
+  margin-top: 20px;
+}
 /*# sourceMappingURL=index.css.map */
