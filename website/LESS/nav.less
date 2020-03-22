@@ -11,6 +11,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-bottom: 1px solid @accent-color;
 
     ul {
         display: flex;
@@ -29,6 +30,10 @@ nav {
     }
 
     a:hover {
+        border-bottom: 3px solid #000;
+    }
+
+    .active {
         border-bottom: 3px solid #000;
     }
 }
