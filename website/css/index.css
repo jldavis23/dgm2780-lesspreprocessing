@@ -169,10 +169,10 @@ html {
 }
 .gallery figcaption {
   font-size: 1.6rem;
-  text-align: center;
   margin: 10px;
   color: #9e9e9e;
   font-weight: 600;
+  text-align: center;
   text-transform: uppercase;
 }
 .gallery figcaption span {
@@ -192,9 +192,9 @@ html {
 }
 header h1 {
   font-size: 5rem;
-  font-family: 'Baloo 2', cursive;
+  font-family: 'Baloo 2', 'Helvetica', cursive;
   text-align: center;
-  padding: 2%;
+  padding: 30px 4%;
 }
 nav {
   display: flex;
@@ -208,8 +208,8 @@ nav ul {
 nav a {
   display: block;
   text-decoration: none;
-  font-family: 'Raleway', sans-serif;
-  color: #000;
+  font-family: 'Raleway', 'Arial', sans-serif;
+  color: #141414;
   font-size: 1.5rem;
   padding: 15px 0;
   margin: 0 15px;
@@ -217,10 +217,10 @@ nav a {
   transition: all 0.2s ease-in-out;
 }
 nav a:hover {
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #141414;
 }
 nav .active {
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #141414;
 }
 footer {
   font-size: 1.6rem;
@@ -230,7 +230,7 @@ footer {
   color: #fff;
 }
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', 'Arial', sans-serif;
 }
 .home nav {
   border: none;
@@ -337,6 +337,7 @@ section > h1 {
   margin: 10px;
   color: #9e9e9e;
   font-weight: 600;
+  text-align: center;
 }
 .section-product-features .features-description span {
   display: block;
@@ -524,5 +525,56 @@ section > h1 {
   padding-right: 4%;
   padding-bottom: 70px;
   border-bottom: 1px solid #9e9e9e;
+  text-align: center;
+}
+.section-all-products .button {
+  background: #cc6d01;
+  color: #fff;
+  border: 1px solid #cc6d01;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+  margin: 20px 0;
+}
+.section-all-products .button:hover {
+  cursor: pointer;
+  color: #cc6d01;
+  background: #fff;
+}
+.section-about {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #9e9e9e;
+}
+.section-about p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+.section-about img {
+  width: 100%;
+  margin-top: 50px;
+}
+.section-about div {
+  text-align: center;
+}
+.section-about .button {
+  background: #cc6d01;
+  color: #fff;
+  border: 1px solid #cc6d01;
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.4rem;
+  transition: all 0.35s ease-in-out;
+  margin: 40px 0;
+}
+.section-about .button:hover {
+  cursor: pointer;
+  color: #cc6d01;
+  background: #fff;
 }
 /*# sourceMappingURL=index.css.map */
